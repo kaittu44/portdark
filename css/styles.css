@@ -22,6 +22,12 @@ font-family: 'Roboto',sans-serif;
     background-size: cover;
 }
 
+@media (max-width:1250px){
+    .overall-top{
+        background-size:contain;
+    }
+}
+
 /* Navigation Section */
 .navigation{
     background-image: linear-gradient(to right, #e1aeff00, #ffbdf700);
