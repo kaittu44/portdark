@@ -1,0 +1,186 @@
+/*
+font-family: 'Delius Unicase',cursive;
+font-family: 'Kavivanar',cursive;
+font-family: 'Montserrat',sans-serif;
+font-family: 'Roboto',sans-serif;
+*/
+
+.navbar-brand , .nav-item , .name , .profession , .r1 {
+    font-family: 'Delius Unicase', cursive;
+}
+
+.navbar-brand, .name, .profession, .r1 {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.overall-top{
+    background: url('../images/Untitled\ design.png') no-repeat center center fixed ;
+    background-size: cover;
+}
+
+/* Navigation Section */
+.navigation{
+    background-image: linear-gradient(to right, #e1aeff00, #ffbdf700);
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.navbar-brand {
+    background-image: linear-gradient(to right, #21336300, #e966a100, #f24c3d00);
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
+
+.navbar-brand img{
+    mix-blend-mode:luminosity;
+}
+
+.navbar-nav{
+    text-align: center;
+}
+
+.nav-item {
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 4px;
+}
+
+.nav-link {
+    background-image: linear-gradient(to right ,#ffffff5e ,#ffffff5e );
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: .5s;
+    background-position: left;
+}
+
+.nav-link:hover {
+    background-size: 100% 100%;
+}
+/* Intro Section */
+
+.intro-img img{
+    visibility: hidden;
+}
+
+.intro-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:1350px) {
+    .intro-container{
+        flex-direction: column;
+    }
+}
+
+.intro-text {
+    color: antiquewhite;
+    letter-spacing: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+
+.intro-text .name{
+    background-image: linear-gradient(to right , black , grey ,black , grey , black , grey , black , grey , black);
+    font-weight: 700;
+    font-size: 5rem;
+    animation: fadeInRight;
+    animation-duration: 1s;
+}
+
+.intro-text .profession , .r1{
+    font-weight: 400;
+    font-size: 1rem;
+    background-image: linear-gradient(to right, #17594A, #213363);
+}
+
+@media (max-width:1350px){
+    .intro-text .name{
+        font-size: 3rem;
+    }
+
+    .intro-text .profession{
+        font-size: 0.6rem;
+    }
+}
+
+
+/* My Projects */
+.second-overall{
+    background: url('../images/newdark.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.r1{
+    background-image: linear-gradient(to right ,  grey , white , grey , white , grey , white , grey);
+    padding-top: 5%;
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+hr{
+    width: 30%;
+    border: none;
+    height:3px;
+    background: black;
+    margin: 0.5rem auto ;
+    opacity: 1;
+}
+
+.project-row{
+    padding:5%;
+}
+
+@media (max-width:1350px){
+    .project-row{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+.card{
+    margin-bottom: 3%;
+    text-align: center;
+    background-color: #f3ccff34;
+    letter-spacing: 5px;
+    border-radius: 10px;
+    animation-delay: 0ms;
+}
+
+.project-img{
+    border-radius: 5px;
+}
+
+.card-header{
+    border-style: none;
+    background: transparent;
+}
+
+.card-header:hover {
+    animation: pulse;
+    animation-duration: 1s;
+}
+
+.project-link{
+    text-decoration: none;
+    color:#2B2730;
+}
+
+.project-link:hover {
+    color: black;
+}
